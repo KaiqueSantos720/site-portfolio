@@ -1,0 +1,292 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #131313;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #ab9353;
+    border-radius: 20px;
+    border: 3px solid #131313;
+}
+
+@import url('http://fonts.cdnfonts.com/css/pixel-art');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #131313;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.headline{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 50px;
+    word-break: break-all;
+}
+
+.logo{
+    width: 7%;
+}
+
+#navbar{
+    width: 100%;
+    background: #ab9353;
+    color: #ab9353;
+    height: 80px;
+    position: fixed;
+    z-index: 10;
+}
+
+#navbar-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+#navbar-itens{
+    display: flex;
+    list-style: none;
+    text-transform: uppercase; 
+}
+
+#navbar-itens li{
+    padding: 10px;
+}
+
+#navbar-itens a{
+    color: #131313;
+}
+
+a{
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #131313;
+    margin: 8px;
+}
+
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+
+#navbar-itens.active{
+    transform: translateX(0);
+}
+
+#navbar-itens a{
+    transition: all .3s;
+}
+
+#navbar-itens a:hover{
+    transition: all .3s;
+    border-bottom: 1.5px solid #131313;
+}
+
+input{
+    display: none;
+}
+
+#produto{
+    width: 100%;
+    padding: 140px;
+    background:#131313;
+    color: #ab9353;
+}
+
+#produto-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#itens{
+    width: 40%;
+    margin-left: 10%;
+}
+
+h1{
+    font-size: 8rem;
+    text-align: justify;
+    font-family: 'Imprint MT Shadow';
+    width: 30%;
+}
+
+#itens .item{
+    display: flex;
+    padding: 10px;
+    margin: 15px 0;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.item i{
+    padding: 10px;
+}
+
+.item p{
+    font-size: 1.4rem;
+}
+
+.meteoro{
+    width: 50%;
+}
+
+#skills{
+    width: 100%;
+    background:#ab9353;
+    color: #131313;
+    padding: 50px;
+}
+
+#habilidades{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 2 colunas que ocupa 1 fraÃ§Ã£o da div total */
+    justify-items: center;
+    padding: 15px;
+    grid-row-gap: 40px;
+}
+
+.plat{
+    display: inline-block;
+    width: 50%;
+}
+
+.habilidade{
+    display: flex;
+    justify-content: center;
+    border-radius: 2.5vh;
+}
+
+#visao{
+    width: 100%;
+    background:#131313;
+    color: #ab9353;
+    padding: 50px;
+}
+
+#projetos{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 50px;
+}
+
+.sobre{
+    display: flex;
+    flex-direction: column;
+    background:#ab9353;
+    color: #131313;
+    padding: 20px;
+    border-radius: 2.5vh;
+}
+
+.sobre p{
+    text-align: justify;
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+
+.sobre-titulo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-proj{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2.5vh;
+}
+
+#footer{
+    background: #131313;
+    color: #ab9353;
+    padding: 30px;
+    text-align: center;
+}
+
+.contato{
+    width: 100%;
+    background:#ab9353;
+    color: #131313;
+}
+
+.conts{
+    width: 20%;
+    transition: all .3s;
+}
+
+.ico{
+    display: flex;
+    justify-content: center;
+}
+
+.ficon{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.conts:hover{
+    transition: all .3s;
+    transform: scale(1.2);
+}
+
+#habilities, #project, #ctt{
+    position: relative;
+    bottom: 4.9rem;
+}
+
+@keyframes linkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+  
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+  
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
