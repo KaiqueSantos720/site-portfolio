@@ -153,6 +153,11 @@ h1{
     font-size: 1.4rem;
 }
 
+.name-proj{
+    margin: auto;
+    color: #131313;
+}
+
 .meteoro{
     width: 50%;
 }
